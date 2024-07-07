@@ -1,0 +1,45 @@
+{
+  "_name": "nevermine.Dusteiva",
+  "drops": [
+    {
+      "_comment": "异位普通怪，达斯维",
+      "function": "all",
+      "functions": [
+        {
+          "_comment": "达斯维，禁止掉落，黑暗毁灭者",
+          "function": "remove",
+          "id": "nevermine:DarkDestroyer"
+        },
+        {
+          "_comment": "增加掉落黑暗旗帜",
+          "function": "add",
+          "id": "nevermine:DustopianBanner",
+          "count": 0.14
+        }
+      ]
+    }
+  ],
+  "pre_stats": [],
+  "stats": [
+    {
+      "_comment": "异位普通怪，达斯维",
+      "function": "all",
+      "functions": [
+        {
+          "_comment": "这里设置生物血量",
+          "function": "modifier",
+          "attribute": "generic.maxHealth",
+          "value": 100.0~180.0,
+          "override": true
+        },
+        {
+          "_comment": "这里设置生物攻击力",
+          "function": "modifier",
+          "attribute": "generic.attackDamage",
+          "value": 0.0~4.0,
+          "operator": 2
+        }
+      ]
+    }
+  ]
+}
